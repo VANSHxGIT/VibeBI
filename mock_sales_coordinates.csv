@@ -1,0 +1,11 @@
+Row ID,Region,Segment,Product,Sales,Profit,Latitude,Longitude,Date
+1,West,Consumer,Laptop,1200,300,37.7749,-122.4194,2026-01-15
+2,West,Corporate,Phone,800,150,34.0522,-118.2437,2026-01-18
+3,East,Consumer,Laptop,1500,400,40.7128,-74.0060,2026-02-10
+4,East,Home Office,Tablet,450,80,42.3601,-71.0589,2026-02-12
+5,Central,Consumer,Phone,950,200,41.8781,-87.6298,2026-02-22
+6,Central,Corporate,Monitor,300,50,39.9526,-75.1652,2026-03-01
+7,South,Consumer,Laptop,1100,250,25.7617,-80.1918,2026-03-05
+8,South,Corporate,Tablet,500,100,29.7604,-95.3698,2026-03-12
+9,Eurasia,Consumer,Phone,850,180,55.7558,37.6173,2026-03-20
+10,Australia,Corporate,Laptop,1300,320,-33.8688,151.2093,2026-03-25

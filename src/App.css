@@ -1,0 +1,109 @@
+/* Premium App Adjustments and Print Styling */
+
+.dashboard-tabs {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--border-glass);
+}
+
+.dashboard-tab {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-glass);
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: var(--transition-smooth);
+  white-space: nowrap;
+}
+
+.dashboard-tab:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.dashboard-tab.active {
+  background: var(--color-primary-glow);
+  border-color: var(--color-primary);
+  color: #fff;
+}
+
+/* Print Overrides */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    background-image: none !important;
+  }
+
+  .navbar,
+  .sidebar-panel,
+  .slicers-bar,
+  .widget-controls,
+  .data-preview-table-card,
+  .dashboard-tabs,
+  button,
+  select {
+    display: none !important;
+  }
+
+  .main-content {
+    padding: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .report-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+  }
+
+  .kpi-row {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 15px !important;
+    margin-bottom: 30px !important;
+  }
+
+  .kpi-tile {
+    background: #ffffff !important;
+    border: 1px solid #cccccc !important;
+    box-shadow: none !important;
+    color: #000000 !important;
+    padding: 12px !important;
+  }
+
+  .kpi-title, .kpi-value {
+    color: #000000 !important;
+  }
+
+  .visuals-grid {
+    display: block !important;
+  }
+
+  .widget-card {
+    background: #ffffff !important;
+    border: 1px solid #cccccc !important;
+    box-shadow: none !important;
+    color: #000000 !important;
+    margin-bottom: 24px !important;
+    page-break-inside: avoid !important;
+    width: 100% !important;
+    grid-column: span 12 !important;
+  }
+
+  .widget-title {
+    color: #000000 !important;
+  }
+
+  /* Force chart svg labels to print black */
+  .recharts-text {
+    fill: #333333 !important;
+  }
+  .recharts-cartesian-grid-horizontal line,
+  .recharts-cartesian-grid-vertical line {
+    stroke: #dddddd !important;
+  }
+}
