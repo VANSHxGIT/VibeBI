@@ -1,4 +1,4 @@
-# 🌌 VibeBI (Automatic Data Visualizer)
+# 🌌 VibeBI
 
 VibeBI is a premium, client-side, zero-server-dependency business intelligence dashboard application. It allows users to instantly transform raw spreadsheet and database dump files into stunning, interactive, and offline-capable analytics dashboards. Built with React and Vite, all processing, data cleaning, schema parsing, and chart rendering happen 100% locally in the user's browser, ensuring absolute data security and privacy.
 
